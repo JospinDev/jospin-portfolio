@@ -27,6 +27,8 @@
         <ul class="nav-links">
             <li><a href="#hero" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -44,7 +46,7 @@
         <div class="hero-content">
             <h1>Hi, I'm <span class="gradient-text">Jospin</span> 👋</h1>
             <div class="typing-text"></div>
-            <p>Crafting scalable backend solutions with Django, building interactive interfaces with Vue.js, and creating beautiful mobile experiences with Flutter. Passionate about clean code and community learning.</p>
+            <p>Specialized in building robust RESTful APIs and backend systems with Django REST Framework. Experienced with FastAPI, PostgreSQL, and creating scalable server-side solutions. Also developing cross-platform mobile apps with Flutter and learning modern web frameworks.</p>
             <div class="cta-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
                 <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -62,9 +64,10 @@
             </div>
             <div class="about-text">
                 <h3>Backend Developer & Software Engineer</h3>
-                <p>Hello! I'm Fadhili William Jospin, a passionate backend developer from Burundi 🇧🇮 with expertise in building robust and scalable applications. I specialize in Django REST Framework for creating powerful APIs, Vue.js for dynamic frontend experiences, and Flutter for cross-platform mobile development.</p>
-                <p>My journey in software engineering has led me to work on microfinance systems and various web applications, always focusing on clean architecture, efficient code, and user-centric solutions. I believe in the power of technology to transform communities and am dedicated to continuous learning and sharing knowledge with others.</p>
+                <p>Hello! I'm Fadhili William Jospin, a passionate backend developer from Burundi 🇧🇮 specializing in building robust RESTful APIs and scalable server-side applications. My primary expertise is in Django REST Framework, with growing proficiency in FastAPI for high-performance API development.</p>
+                <p>My journey in software engineering has led me to work on microfinance systems, e-commerce platforms, and various backend services, always focusing on clean architecture, efficient database design, and secure API endpoints. I also develop cross-platform mobile applications with Flutter (intermediate level) and have basic knowledge of Vue.js for frontend integration. I believe in the power of technology to transform communities and am dedicated to continuous learning and sharing knowledge with others.</p>
                 <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or mentoring aspiring developers in my community.</p>
+                <p>Beyond programming, I'm passionate about music as a drummer 🥁 and I enjoy playing football ⚽ to stay active and connect with friends. I believe in maintaining a balanced lifestyle where creativity and physical activity complement my technical pursuits.</p>
                 
                 <div class="about-stats">
                     <div class="stat-item">
@@ -81,7 +84,143 @@
                     </div>
                 </div>
 
-                <a href="images/jospin_cv.pdf" class="btn btn-primary" download>Download CV</a>
+                <div class="cv-buttons">
+                    <button class="btn btn-primary" id="viewCvBtn">View CV</button>
+                    <a href="images/jospin_cv.pdf" class="btn btn-secondary" download>Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="reveal">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">My academic background</p>
+        <div class="education-timeline">
+            <div class="education-item">
+                <div class="education-date">
+                    <span>2021 - 2024</span>
+                </div>
+                <div class="education-content">
+                    <div class="education-icon">
+                        <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/>
+                        </svg>
+                    </div>
+                    <h3>Licence en Informatique</h3>
+                    <h4>Université du Lac Tanganyika</h4>
+                    <p class="education-specialty">Département: Génie Logiciel</p>
+                    <p class="education-description">Formation universitaire complète en génie logiciel, couvrant le développement d'applications, les bases de données, les architectures logicielles et les méthodologies de développement.</p>
+                    <div class="education-achievements">
+                        <span class="achievement-tag">Génie Logiciel</span>
+                        <span class="achievement-tag">Programmation</span>
+                        <span class="achievement-tag">Bases de Données</span>
+                        <span class="achievement-tag">Architecture Logicielle</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="education-date">
+                    <span>2020 - 2021</span>
+                </div>
+                <div class="education-content">
+                    <div class="education-icon">
+                        <svg width="32" height="32" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Diplôme d'Humanités</h3>
+                    <h4>Études Secondaires</h4>
+                    <p class="education-specialty">Section: Informatique de Télécommunication</p>
+                    <p class="education-description">Formation spécialisée en informatique et télécommunications au niveau secondaire.</p>
+                    <div class="education-diplomas">
+                        <div class="diploma-badge">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                            <span>Diplôme A2 de Classe</span>
+                        </div>
+                        <div class="diploma-badge">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 11.75A2.25 2.25 0 1 1 11.25 9.5 2.25 2.25 0 0 1 9 11.75zm0-3a.75.75 0 1 0 .75.75.75.75 0 0 0-.75-.75zM21 3H3a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM4 18V6h16v12z"/>
+                            </svg>
+                            <span>Diplôme d'État</span>
+                        </div>
+                    </div>
+                    <div class="education-achievements">
+                        <span class="achievement-tag">Informatique</span>
+                        <span class="achievement-tag">Télécommunication</span>
+                        <span class="achievement-tag">Réussite à l'Examen d'État</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="reveal">
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-subtitle">Professional journey and internships</p>
+        <div class="experience-timeline">
+            <div class="experience-item">
+                <div class="experience-icon">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+                    </svg>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Backend Developer (Intern & Project Developer)</h3>
+                            <h4>Hogitugende</h4>
+                        </div>
+                        <span class="experience-date">May 2025 - Present</span>
+                    </div>
+                    <ul class="experience-responsibilities">
+                        <li>Built and deployed a <strong>Microfinance Management System</strong> using Django REST Framework</li>
+                        <li>System currently <strong>live and serving real clients</strong> with continuous maintenance</li>
+                        <li>Designed RESTful APIs for loan management, member tracking, and financial reporting</li>
+                        <li>Implemented secure authentication and authorization mechanisms</li>
+                        <li>Collaborated with team to ensure code quality and best practices</li>
+                    </ul>
+                    <div class="experience-tech">
+                        <span class="tech-tag">Django REST Framework</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Git</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-icon">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                </div>
+                <div class="experience-content">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Software Development Trainee</h3>
+                            <h4>Hogitugende</h4>
+                        </div>
+                        <span class="experience-date">April 2025</span>
+                    </div>
+                    <ul class="experience-responsibilities">
+                        <li>Developed a <strong>Bakery Management System</strong> during advanced training</li>
+                        <li>Automated sales tracking and inventory management processes</li>
+                        <li>Successfully deployed system for a satisfied client</li>
+                        <li>Gained hands-on experience with Django framework and database design</li>
+                    </ul>
+                    <div class="experience-tech">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Database Design</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -129,6 +268,15 @@
                         <div class="skill-progress" style="--skill-width: 80%"></div>
                     </div>
                 </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>FastAPI</span>
+                        <span>45%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="--skill-width: 45%"></div>
+                    </div>
+                </div>
             </div>
 
             <div class="skill-category">
@@ -136,28 +284,28 @@
                 <div class="skill-item">
                     <div class="skill-name">
                         <span>Vue.js</span>
-                        <span>75%</span>
+                        <span>40%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-progress" style="--skill-width: 75%"></div>
+                        <div class="skill-progress" style="--skill-width: 40%"></div>
                     </div>
                 </div>
                 <div class="skill-item">
                     <div class="skill-name">
                         <span>JavaScript</span>
-                        <span>80%</span>
+                        <span>50%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-progress" style="--skill-width: 80%"></div>
+                        <div class="skill-progress" style="--skill-width: 50%"></div>
                     </div>
                 </div>
                 <div class="skill-item">
                     <div class="skill-name">
                         <span>HTML & CSS</span>
-                        <span>85%</span>
+                        <span>50%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-progress" style="--skill-width: 85%"></div>
+                        <div class="skill-progress" style="--skill-width: 50%"></div>
                     </div>
                 </div>
             </div>
@@ -167,19 +315,19 @@
                 <div class="skill-item">
                     <div class="skill-name">
                         <span>Flutter</span>
-                        <span>70%</span>
+                        <span>50%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-progress" style="--skill-width: 70%"></div>
+                        <div class="skill-progress" style="--skill-width: 50%"></div>
                     </div>
                 </div>
                 <div class="skill-item">
                     <div class="skill-name">
                         <span>Dart</span>
-                        <span>68%</span>
+                        <span>50%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-progress" style="--skill-width: 68%"></div>
+                        <div class="skill-progress" style="--skill-width: 50%"></div>
                     </div>
                 </div>
             </div>
@@ -211,112 +359,108 @@
     <!-- Projects Section -->
     <section id="projects" class="reveal">
         <h2 class="section-title">Featured Projects</h2>
-        <p class="section-subtitle">Some of my recent work</p>
+        <p class="section-subtitle">Backend APIs and Full-Stack Solutions I've Built</p>
+        <div class="project-note">
+            <p>💡 <strong>Real Projects:</strong> These are production systems I've built and deployed for real clients and personal use. Visit my <a href="https://github.com/jospindev" target="_blank">GitHub profile</a> to see the source code and more projects.</p>
+        </div>
         <div class="projects-grid">
+            <!-- Microfinance Management System -->
             <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Microfinance System" class="project-image">
+                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&h=400&fit=crop" alt="Microfinance System" class="project-image">
                 <div class="project-info">
                     <h3 class="project-title">Microfinance Management System</h3>
-                    <p class="project-description">A comprehensive microfinance platform built with Django REST Framework featuring loan management, member tracking, and financial reporting.</p>
+                    <p class="project-description">Full-stack microfinance platform built with Django REST Framework. Currently live and serving real clients. Features include loan management, member registration, payment tracking, and comprehensive financial reporting.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">DRF</span>
+                        <span class="tech-tag">Django REST</span>
+                        <span class="tech-tag">Python</span>
                         <span class="tech-tag">PostgreSQL</span>
-                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">API</span>
+                    </div>
+                    <div class="project-meta">
+                        <span class="meta-item">🏢 Hogitugende</span>
+                        <span class="meta-item">📅 May 2025 - Present</span>
+                    </div>
+                    <div class="project-status">
+                        <span class="status-badge completed">✅ In Production</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link link-demo">View Demo</a>
-                        <a href="#" class="project-link link-code">View Code</a>
+                        <a href="https://github.com/jospindev" class="project-link link-code" target="_blank">View on GitHub</a>
                     </div>
                 </div>
             </div>
 
+            <!-- Intwari Stadium Ticketing System -->
             <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop" alt="E-Commerce API" class="project-image">
+                <img src="images/stade.png" alt="Stadium Ticketing" class="project-image">
                 <div class="project-info">
-                    <h3 class="project-title">E-Commerce REST API</h3>
-                    <p class="project-description">Full-featured e-commerce backend with authentication, product management, cart functionality, and payment integration.</p>
+                    <h3 class="project-title">Intwari Stadium - Ticketing System</h3>
+                    <p class="project-description">Complete football stadium ticketing system with QR code generation, ticket validation, and access control. Features user authentication, ticket categories (VIP/Tour), QR code scanning, and admin dashboard for event management. Agents can scan and validate tickets at stadium entrances.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">QR Codes</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Authentication</span>
+                    </div>
+                    <div class="project-meta">
+                        <span class="meta-item">💼 Personal Project</span>
+                        <span class="meta-item">🎯 Full-Stack</span>
+                    </div>
+                    <div class="project-status">
+                        <span class="status-badge completed">✅ Completed</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/jospindev" class="project-link link-code" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bakery Management System -->
+            <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&h=400&fit=crop" alt="Bakery Management" class="project-image">
+                <div class="project-info">
+                    <h3 class="project-title">Bakery Management System</h3>
+                    <p class="project-description">Automated sales and inventory management system for a bakery. Built during advanced training at Hogitugende. Successfully deployed for a satisfied client, streamlining daily operations and inventory tracking.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Django</span>
                         <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Redis</span>
-                        <span class="tech-tag">Stripe</span>
+                        <span class="tech-tag">Sales Automation</span>
+                        <span class="tech-tag">Inventory</span>
+                    </div>
+                    <div class="project-meta">
+                        <span class="meta-item">🏢 Hogitugende</span>
+                        <span class="meta-item">📅 April 2025</span>
+                    </div>
+                    <div class="project-status">
+                        <span class="status-badge completed">✅ Deployed</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link link-demo">View Demo</a>
-                        <a href="#" class="project-link link-code">View Code</a>
+                        <a href="https://github.com/jospindev" class="project-link link-code" target="_blank">View on GitHub</a>
                     </div>
                 </div>
             </div>
 
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=600&h=400&fit=crop" alt="Mobile App" class="project-image">
-                <div class="project-info">
-                    <h3 class="project-title">Community Learning App</h3>
-                    <p class="project-description">Cross-platform mobile application for community education built with Flutter, featuring courses, quizzes, and progress tracking.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Flutter</span>
-                        <span class="tech-tag">Dart</span>
-                        <span class="tech-tag">Firebase</span>
-                        <span class="tech-tag">DRF</span>
+            <!-- GitHub Contributions Card -->
+            <div class="project-card github-card">
+                <div class="github-card-content">
+                    <div class="github-icon">
+                        <svg width="80" height="80" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </div>
+                    <h3 class="project-title">More Projects on GitHub</h3>
+                    <p class="project-description">Explore my other Django REST APIs, FastAPI experiments, Flutter applications, and open-source contributions.</p>
+                    <div class="github-stats">
+                        <div class="stat-box">
+                            <div class="stat-value">🚀</div>
+                            <div class="stat-label">Active Developer</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-value">🔧</div>
+                            <div class="stat-label">Backend Focus</div>
+                        </div>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link link-demo">View Demo</a>
-                        <a href="#" class="project-link link-code">View Code</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Dashboard" class="project-image">
-                <div class="project-info">
-                    <h3 class="project-title">Analytics Dashboard</h3>
-                    <p class="project-description">Real-time analytics dashboard built with Vue.js and Django, featuring data visualization and custom reporting tools.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Vue.js</span>
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">Chart.js</span>
-                        <span class="tech-tag">WebSocket</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link link-demo">View Demo</a>
-                        <a href="#" class="project-link link-code">View Code</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=400&fit=crop" alt="Task Manager" class="project-image">
-                <div class="project-info">
-                    <h3 class="project-title">Team Task Manager</h3>
-                    <p class="project-description">Collaborative task management system with real-time updates, team spaces, and project tracking capabilities.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">Vue.js</span>
-                        <span class="tech-tag">WebSocket</span>
-                        <span class="tech-tag">Celery</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link link-demo">View Demo</a>
-                        <a href="#" class="project-link link-code">View Code</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop" alt="Blog Platform" class="project-image">
-                <div class="project-info">
-                    <h3 class="project-title">Developer Blog Platform</h3>
-                    <p class="project-description">Modern blogging platform with markdown support, code syntax highlighting, and community features for developers.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Django</span>
-                        <span class="tech-tag">HTML/CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Markdown</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link link-demo">View Demo</a>
-                        <a href="#" class="project-link link-code">View Code</a>
+                        <a href="https://github.com/jospindev" class="project-link link-demo" target="_blank">Visit GitHub Profile</a>
                     </div>
                 </div>
             </div>
@@ -330,7 +474,7 @@
         <div class="contact-content">
             <div class="contact-info">
                 <h3>Let's Connect!</h3>
-                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Whether you need a robust backend API, a beautiful Vue.js interface, or a cross-platform mobile app, I'm here to help bring your ideas to life.</p>
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Whether you need a robust RESTful API built with Django or FastAPI, a scalable backend system, database design, or a cross-platform mobile app with Flutter, I'm here to help bring your ideas to life.</p>
                 <p>Feel free to reach out through the contact form or connect with me on social media. I typically respond within 24 hours.</p>
                 <p><strong>Location:</strong> Bujumbura, Burundi 🇧🇮</p>
                 <p><strong>Email:</strong> williamjospin1@gmail.com</p>
@@ -373,6 +517,18 @@
             <p>Designed & Built with ❤️ in Burundi 🇧🇮</p>
         </div>
     </footer>
+
+    <!-- CV Modal -->
+    <div id="cvModal" class="cv-modal">
+        <div class="cv-modal-content">
+            <button class="cv-modal-close" id="closeCvModal">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+            <iframe id="cvIframe" src="" frameborder="0"></iframe>
+        </div>
+    </div>
 
     <!-- Scroll to Top Button -->
     <button class="scroll-top" id="scrollTop">↑</button>

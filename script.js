@@ -168,7 +168,7 @@ window.addEventListener('load', () => {
             const message = document.getElementById('message').value;
 
             // Using mailto as a simple solution
-            const mailtoLink = `mailto:jospin@example.com?subject=Portfolio Contact from ${name}&body=${encodeURIComponent(message)}%0D%0A%0D%0AFrom: ${email}`;
+            const mailtoLink = `mailto:williamjospin1@gmail.com?subject=Portfolio Contact from ${name}&body=${encodeURIComponent(message)}%0D%0A%0D%0AFrom: ${email}`;
             
             window.location.href = mailtoLink;
             
@@ -235,3 +235,53 @@ window.addEventListener('load', () => {
         statNumbers.forEach(stat => {
             statsObserver.observe(stat);
         });
+
+        // CV Modal functionality
+        const viewCvBtn = document.getElementById('viewCvBtn');
+        const cvModal = document.getElementById('cvModal');
+        const closeCvModal = document.getElementById('closeCvModal');
+        const cvIframe = document.getElementById('cvIframe');
+
+        // Check if all elements exist before adding event listeners
+        if (viewCvBtn && cvModal && closeCvModal && cvIframe) {
+            viewCvBtn.addEventListener('click', () => {
+                console.log('View CV button clicked'); // Debug log
+                cvIframe.src = 'images/jospin_cv.pdf';
+                cvModal.style.display = 'flex'; // Force display first
+                setTimeout(() => {
+                    cvModal.classList.add('active');
+                }, 10);
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+
+            closeCvModal.addEventListener('click', () => {
+                console.log('Close CV button clicked'); // Debug log
+                cvModal.classList.remove('active');
+                document.body.style.overflow = 'auto'; // Re-enable scrolling
+                setTimeout(() => {
+                    cvModal.style.display = 'none';
+                    cvIframe.src = ''; // Clear iframe after animation
+                }, 300);
+            });
+
+            // Close modal when clicking outside
+            cvModal.addEventListener('click', (e) => {
+                if (e.target === cvModal) {
+                    closeCvModal.click();
+                }
+            });
+
+            // Close modal with Escape key
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && cvModal.classList.contains('active')) {
+                    closeCvModal.click();
+                }
+            });
+        } else {
+            console.error('CV Modal elements not found:', {
+                viewCvBtn: !!viewCvBtn,
+                cvModal: !!cvModal,
+                closeCvModal: !!closeCvModal,
+                cvIframe: !!cvIframe
+            });
+        }
